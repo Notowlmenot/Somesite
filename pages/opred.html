@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/opred.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <nav>
+        <div class="navbar-content">
+            <a class="nav-link" href="../index.html">
+                Главная страница
+              </a>
+              <a class="nav-link is-active" href="./opred.html">
+                Определения
+              </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="faq">
+            <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq_1">
+                <label class="faq-title" for="faq_1">Синус / Арксинус</label>
+                <div class="faq-text">
+                    <p>
+                        Из определения синуса следует, что -1 ⩽ sinα ⩽ 1. Поэтому если |α| > 1, то уравнение sinx = α не имеет корней. Например, уравнение sinx = 2 не имеет корней.
+                        <br><br>
+                        Арксинусом числа α ∈ [-1;1] называется такое число α ∈ [-π/2, π/2], синус которого равен α:
+                        <br>
+                        arcsina = α, если sinα = a и -π/2 ⩽ α ⩽ π/2.
+                        <br><br>
+                        Таким образом, все корни уравнения sinx = α, где |α| ⩽ 1, можно находить по формуле:
+                        <br>
+                        x = (-1)^n acrsinα + πn, где n ∈ Z.
+                        <br><br>
+                        Частные случаи:
+                        <br>
+                        sinx=0, x = πn, n ∈ Z.
+                        <br>
+                        sinx=1, x = π/2 + 2πn, n ∈ Z.
+                        <br>
+                        sinx=-1, x = -π/2 + 2πn, n ∈ Z.
+                        <br><br>
+                        Так же можно доказать, что для любого значения α ∈ [-1; 1] справедлива следующая формула:
+                        <br>
+                        arcsin(-α) = -arcsinα
+                    </p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq_2">
+                <label class="faq-title" for="faq_2">Косинус / Арккосинус</label>
+                <div class="faq-text">
+                    <p>
+                        Из определения косинуса следует, что -1 ⩽ cosα ⩽ 1. Поэтому если |α| > 1, то уравнение cosx = α не имеет корней. Например, уравнение cosx = -1,5 не имеет корней.
+                        <br><br>
+                        Арккосинусом числа α ∈ [-1;1] называется такое число α ∈ [0,π], косинус которого равен α:
+                        <br>
+                        arccosa = α, если cosα = a и 0 ⩽ α ⩽ π.
+                        <br><br>
+                        Таким образом, все корни уравнения cosx = α, где |α| ⩽ 1, можно находить по формуле:
+                        <br>
+                        x = ±arccosα + 2πn, где n ∈ Z.
+                        <br><br>
+                        Частные случаи:
+                        <br>
+                        cosx=0, x = π/2 + πn, n ∈ Z.
+                        <br>
+                        cosx=1, x = 2πn, n ∈ Z.
+                        <br>
+                        cosx=-1, x = π + 2πn, n ∈ Z.
+                        <br><br>
+                        Так же можно доказать, что для любого значения α ∈ [-1; 1] справедлива следующая формула:
+                        <br>
+                        arccos(-α) = π - arccosα
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq_3">
+                <label class="faq-title" for="faq_3">Тангенс / Арктангенс</label>
+                <div class="faq-text">
+                    <p>
+                        Из определения тангенса следует, что tgx может принимать любое действительное значение. Поэтому уравнение tgx=α имеет корни при любом значении α.
+                        <br><br>
+                        Арктангенсом числа α ∈ R называется такое число α ∈ [-π/2, π/2], тангенс которого равен α:
+                        <br>
+                        arctga = α, если tgα = a и -π/2 < α < π/2
+                        <br><br>
+                        Таким образом можно сказать, что все корни уравнения tgx = α, где α ∈ R, выражаются следующей формулой:
+                        <br>
+                        x = arctgα+πn, n ∈ Z.
+                        <br><br>
+                        Так же можно доказать, что для любого значения α ∈ R справедлива следующая формула:
+                        <br>
+                        arctg(-α) = -arctgα
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input class="faq-input" type="checkbox" id="faq_4">
+                <label class="faq-title" for="faq_4">Тригонометрический круг</label>
+                <div class="faq-text">
+                    <p>
+                        Тригонометрический круг — это самый простой способ начать осваивать тригонометрию. Он легко запоминается, и на нём есть всё необходимое.
+                        <br>
+                        Тригонометрический круг заменяет десяток таблиц.
+                    </p>
+                    <img src="../assets/images/trigonometr.jpg">
+                    <p>
+                        Вот что мы видим на этом рисунке:
+                        <br>
+                        <b>1.</b> Перевод градусов в радианы и наоборот. Полный круг содержит 360 градусов, или 2π радиан.
+                        <br>
+                        <b>2.</b> Значения синусов и косинусов основных углов. Помним, что значение косинуса угла мы находим на оси X, а значение синуса — на оси Y.
+                        <br>
+                        <b>3.</b> И синус, и косинус принимают значения от -1 до 1.
+                        <br>
+                        <b>4.</b> Значение тангенса угла α тоже легко найти — поделив sinα на cosα. А чтобы найти котангенс — наоборот, косинус делим на синус.
+                        <br>
+                        <b>5.</b> Знаки синуса, косинуса, тангенса и котангенса.
+                        <br>
+                        <b>6.</b> Синус — функция нечётная, косинус — чётная.
+                        <br>
+                        <b>7.</b> Тригонометрический круг поможет увидеть, что синус и косинус — функции периодические. Период равен 2π.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
